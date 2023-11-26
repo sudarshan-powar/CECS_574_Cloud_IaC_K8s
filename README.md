@@ -4,6 +4,24 @@
 
 This guide provides an overview of how to deploy the frontend and backend components of our project, manage infrastructure with Terraform, automate deployment with Jenkins, and configure Kubernetes resources with Helm.
 
+## Frontend
+
+The frontend directory contains all the source code for the user interface of the application. It includes HTML, CSS, JavaScript files, and other assets required for the frontend.
+1. Change the baseURL from "App.Vue" file to lacate your Backend Application URL
+2. Create process.env file and add your Stripe Public key (For Stripe public key and secret key you need to create account on stripe follow the process)
+VUE_APP_STRIPETOKEN="your_stripe_pk"
+3. Navigate to the frontend directory.
+4. Install the dependencies using npm install.
+5. Start the development server using npm start.
+
+
+## Backend
+The backend directory includes the application's server-side logic, database management, and API services.
+This is a Maven Project. Ensure, Maven is installed on your system.
+1. Change the Application Properties (E.g. username/password of DB) present in resources/application.properties according to your local mysql-server also set your Stripe keys.
+2. Go to application.properties and add front-end url and enter the STRIPE API Keys.
+3. Set your Stripe Secret key in OrderService.java in service folder.
+
 ## Terraform
 
 The Terraform directory contains IaC (Infrastructure as Code) scripts that define the cloud resources required for the project.
