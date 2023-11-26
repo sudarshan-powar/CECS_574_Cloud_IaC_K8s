@@ -24,8 +24,8 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      //baseURL: 'https://limitless-lake-55070.herokuapp.com/',
-      baseURL: "http://127.0.0.1:8080/api/",
+      
+      //baseURL: "http://127.0.0.1:8080/api/",
       products: null,
       categories: null,
       key: 0,

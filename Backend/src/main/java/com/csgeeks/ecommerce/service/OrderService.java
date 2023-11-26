@@ -94,7 +94,7 @@ public class OrderService {
         String failedURL = baseURL + "payment/failed";
         
         // set the private key
-        Stripe.apiKey = "sk_test_51OCw2eF4tGJVtN3ekI7Vik21JdbAqHIWHQasUgdGxSrIjdbMaPCf6YvCIsJjTp30b29X5nEUMRLgcja99WqBagVB00Nf7kdmlT";
+        Stripe.apiKey = "STRIPE_SECRET_KEY";
         System.out.println(Stripe.apiKey);
 
         List<SessionCreateParams.LineItem> sessionItemsList = new ArrayList<>();
