@@ -1,7 +1,7 @@
 # CECS_574_Cloud_IaC_K8s
 # CSGEEKS
 
-# Eccommerce Project Deployment Guide
+# Eccommerce Web Application Deployment Guide
 
 This guide provides an overview of how to deploy the frontend and backend components of our project, manage infrastructure with Terraform, automate deployment with Jenkins, and configure Kubernetes resources with Helm.
 
